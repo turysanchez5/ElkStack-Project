@@ -3,10 +3,10 @@
 ### 
 Elk-Stack Project Summary
 
-1.Created a network security group (firewall rules)
-2.Created a virtual network
-3.Created a resource group
-4.Created virtual machines (JumpBox Provisioner, Web-1, Web-2)
+-Created a network security group (firewall rules)
+-Created a virtual network
+-Created a resource group
+-Created virtual machines (JumpBox Provisioner, Web-1, Web-2)
 
 ![](Project1.0.png)
 
