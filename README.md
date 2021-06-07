@@ -1,10 +1,14 @@
 # ElkStack-Project
 
 ### 
-Automated ELK Stack Deployment
-The files in this repository were used to configure the network depicted below.
+Elk-Stack Project Summary
 
-![](Project1.png)
+1.Created a network security group (firewall rules)
+2.Created a virtual network
+3.Created a resource group
+4.Created virtual machines (JumpBox Provisioner, Web-1, Web-2)
+
+![](Project1.0.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
