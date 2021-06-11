@@ -2,7 +2,7 @@
 
 The following diagram shows a visual picture of our Elk Stack project.
 
-![](Diagram.png)
+![](ElkProject.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the roles file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -33,11 +33,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web-1    | WebServer| 10.0.0.5   | Linux            |
-| Web-2    | WebServer| 10.0.0.7   | Linux            |
+| Name      | Function | IP Address | Operating System |
+|-----------|----------|------------|------------------|
+| Jump Box  | Gateway  | 10.0.0.4   | Linux            |
+| Web-1     | WebServer| 10.0.0.5   | Linux            |
+| Web-2     | WebServer| 10.0.0.7   | Linux            |
+| Elk-Server| Server   | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -47,8 +48,8 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - _23.102.152.252
 
 Machines within the network can only be accessed by Jump Box virtual machine.
-- _Which machine did you allow to access your ELK VM? What was its IP address?_
-- _Public IP address from home
+- _Which machine did you allow to access your ELK VM?
+- _ Public IP from home.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -89,14 +90,9 @@ These Beats allow us to collect the following information from each machine:
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-SSH into the control node and follow the steps below:
-- Copy the ansible.cfg file to /etc/ansible/ 
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- _SSH into the control node and do the following:
+- _ Copy the filebeat.yml to /etc/filebeat directory.
+- _ Update the filebeat-playbook.yml file to include where to install the ELK server with the dpkg command and install filebeat in the roles directory
+- _ Run the playbook
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
