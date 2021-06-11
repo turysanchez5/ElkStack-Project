@@ -2,7 +2,7 @@
 
 The following diagram shows a visual picture of our Elk Stack project.
 
-![](ElkProject.png)
+![](Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the roles file may be used to install only certain pieces of it, such as Filebeat.
 
